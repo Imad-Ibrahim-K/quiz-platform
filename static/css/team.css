@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('wp2757874-wallpaper-gif.gif');
+  
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3cm;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .about {
+    text-align: center;
+    margin-top: 20px;
+  }
+  h1,h2{
+  
+      background: -webkit-linear-gradient(left, rgb(255, 255, 255), rgb(255, 57, 146), rgb(255, 255, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-family: 'Edu TAS Beginner', cursive;
+      font-size: 40px;
+      font-weight: bold;
+  }
+  p{
+  
+      color: azure;
+  }
+  

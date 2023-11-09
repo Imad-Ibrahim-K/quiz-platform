@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/quiz.css' %}">
+
+
+    <style>
+           body {
+        background-image: url('{% static "images/bg.gif" %}');
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Quiz!</h1>
+
+        <button onclick="location.href='quiz.html'">Start Quiz</button>
+        <div class="quiz-container">
+            <h1>HTML Quiz</h1>
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" name="q1" value="a"> Hyper Text Markup Language<br>
+                <input type="radio" name="q1" value="b"> High Text Markup Language<br>
+                <input type="radio" name="q1" value="c"> Hyper Tabular Markup Language<br>
+                <input type="radio" name="q1" value="d"> High Tabular Markup Language<br>
+            </div>
+            <div class="question">
+                <p>2. Which is the correct CSS syntax?</p>
+                <input type="radio" name="q2" value="a"> {body;color:black;}<br>
+                <input type="radio" name="q2" value="b"> {body:color=black;}<br>
+                <input type="radio" name="q2" value="c"> body:color=black;<br>
+                <input type="radio" name="q2" value="d"> body {color: black;}<br>
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </div>
+    
+    </div>
+    <!-- <script>
+        function checkAnswers() {
+            var score = 0;
+            var q1 = document.querySelector('input[name="q1"]:checked').value;
+            var q2 = document.querySelector('input[name="q2"]:checked').value;
+
+            if(q1 == "a") score++;
+            if(q2 == "d") score++;
+
+            alert("You scored " + score + " out of 2.");
+        }
+    </script> -->
+</body>
+</html>

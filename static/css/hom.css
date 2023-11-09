@@ -1,0 +1,104 @@
+h1{
+    background: -webkit-linear-gradient(left, rgb(255, 87, 190), rgb(255, 57, 146), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Edu TAS Beginner', cursive;
+    margin-left: 6cm;
+    
+
+   
+}
+
+body{
+
+    background-image: url('wp2757874-wallpaper-gif.gif');
+
+
+}
+.left-1{
+    height: 9cm;
+    width: 13cm;
+    border-radius: 19px;
+  
+}
+
+.txt-1,h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Edu TAS Beginner', cursive;
+    /* margin-left: 1cm; */
+    text-align: center;
+    text-decoration: dotted;
+}
+
+    .left-2{
+    height: 5cm;
+    width: 25cm;
+    border-radius: 19px;
+}
+
+.txt-2,h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Edu TAS Beginner', cursive;
+    margin-left: 1cm;
+
+
+}
+/* button{
+    margin-top: 6cm;
+    margin-left: 17cm;
+    height: 2cm;
+    width: 5cm;
+    background-color: rgb(72, 181, 181);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+
+} */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.button {
+            background: -webkit-linear-gradient(left, rgb(245, 63, 196), rgb(255, 57, 146), rgb(255, 57, 130));
+
+ 
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 20px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-left: 17cm;
+            margin-bottom: 3cm;
+            border-radius: 20px;
+            font-family: 'Lato', sans-serif;
+            height: 5px;
+            width: 94px;
+            justify-content: center;
+            align-items: center;
+
+        }
+p{
+
+    color: rgb(255, 255, 255);
+}
+.reveal {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid rgb(0, 0, 0); 
+  width: 0;
+  animation: reveal 2s steps(40, end) forwards;
+}
+
+@keyframes reveal {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
