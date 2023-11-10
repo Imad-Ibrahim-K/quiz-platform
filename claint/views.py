@@ -56,6 +56,9 @@ def score(request):
 def team(request):
     
     return render(request, "team-details.html")
+def adminpage(request):
+    
+    return render(request, "admin-page.html")
     
 
 

@@ -43,6 +43,7 @@ body{
 
 
 }
+
 /* button{
     margin-top: 6cm;
     margin-left: 17cm;
@@ -63,33 +64,35 @@ body{
 
 
 
-.button {
-            background: -webkit-linear-gradient(left, rgb(245, 63, 196), rgb(255, 57, 146), rgb(255, 57, 130));
+button {
+    background: -webkit-linear-gradient(left, rgb(245, 63, 196), rgb(255, 57, 146), rgb(255, 57, 130));
 
  
-            border: none;
-            color: rgb(255, 255, 255);
-            padding: 20px 34px;
-            text-align: center;
-            text-decoration: none;
-            display: flex;
-            font-size: 20px;
-            margin: 4px 2px;
-            cursor: pointer;
-            margin-left: 17cm;
-            margin-bottom: 3cm;
-            border-radius: 20px;
-            font-family: 'Lato', sans-serif;
-            height: 5px;
-            width: 94px;
-            justify-content: center;
-            align-items: center;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 17cm;
+    margin-bottom: 3cm;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    height: 1px;
+    width: 94px;
+    justify-content: center;
+    align-items: center;
 
-        }
-p{
+    }
+
+
+/* p{
 
     color: rgb(255, 255, 255);
-}
+} */
 .reveal {
   overflow: hidden;
   white-space: nowrap;

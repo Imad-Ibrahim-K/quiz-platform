@@ -10,6 +10,9 @@ urlpatterns = [
     path("mulquiz", views.mulquiz, name="mulquiz"),
     path("score", views.score, name="score"),
     path("team", views.team, name="team"),
+    path("admin-page", views.adminpage, name="admin-page"),
+
+
 
 
 ]

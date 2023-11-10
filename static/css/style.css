@@ -29,7 +29,7 @@ body {
 
 .un {
 width: 76%;
-color: rgb(38, 50, 56);
+color: rgb(255, 255, 255);
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
@@ -49,11 +49,12 @@ font-family: 'Ubuntu', sans-serif;
 
 form.form1 {
     padding-top: 40px;
+    color: white;
 }
 
 .pass {
-        width: 76%;
-color: rgb(38, 50, 56);
+width: 76%;
+color: rgb(255, 255, 255);
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
