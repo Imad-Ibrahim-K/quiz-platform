@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from .models import UserProfile
+
 
 # Create your views here.
 def signin(request):
@@ -20,11 +21,11 @@ def signup(request):
         emailId = request.POST.get("emailId")
 
         # Validate the password
-        try:
-            validate_password(password)
-        except ValidationError as e:
-            # The password is not valid, return the error messages
-            return render(request, "registration_page.html", {"errors": e.messages})
+        # try:
+        #     validate_password(password)
+        # except ValidationError as e:
+        #     # The password is not valid, return the error messages
+        #     return render(request, "registration_page.html", {"errors": e.messages})
 
         # Check if the passwords match
         if password != password2:
@@ -34,6 +35,8 @@ def signup(request):
         user = User.objects.create_user(userName, emailId, password)
         profile = UserProfile(user=user, full_name=fullName)
         profile.save()
+        return redirect("index.html")
+
 
     return render(request, "registration_page.html")
 
