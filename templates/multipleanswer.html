@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mulanser.css' %}">
+
+    <style>
+             body {
+            background-image: url('{% static "images/bg.gif" %}');
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Multi Answer-Quiz</h1>
+        <button onclick="location.href='' ">Start</button>
+        <div class="quiz-container">
+            
+            
+            <h1>HTML Quiz</h1>
+            <div class="question">
+                <p>1. Which of the following are HTML5 elements?</p>
+                <input type="checkbox" id="q1a"> <label for="q1a">div</label><br>
+                <input type="checkbox" id="q1b"> <label for="q1b">article</label><br>
+                <input type="checkbox" id="q1c"> <label for="q1c">section</label><br>
+                <input type="checkbox" id="q1d"> <label for="q1d">span</label><br>
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </div>
+    </div>
+<!-- 
+    <script>
+        function checkAnswers() {
+            var score = 0;
+            var q1a = document.getElementById("q1a").checked;
+            var q1b = document.getElementById("q1b").checked;
+            var q1c = document.getElementById("q1c").checked;
+            var q1d = document.getElementById("q1d").checked;
+
+            if(!q1a && q1b && q1c && !q1d) score++;
+
+            alert("You scored " + score + " out of 1.");
+        }
+    </script> -->
+</body>
+</html>

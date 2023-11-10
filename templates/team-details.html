@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/team.css' %}">
+
+<style>
+     body {
+        background-image: url('{% static "images/bg.gif" %}');
+       }
+
+</style>
+</head>
+<body>
+
+<h1>TEAM <br>BRAIN~BUZZER</h1>
+
+<div class="gallery">
+    
+  <img src="{% static 'images/abuthahir.jpg' %}" alt="Abuthahir"><br>
+  <img src="{% static 'images/imad.jpeg' %}" alt="Imad Ibraheem">
+  <img src="{% static 'images/jishnu.jpeg' %}" alt="Jishnu">
+  <img src="{% static 'images/shahim.jpeg' %}" alt="Shahim">
+  <img src="{% static 'images/rafi.jpeg' %}"alt="Rafi">
+</div>
+
+
+<div class="about">
+  <h2>About Me</h2>
+  <p>Hello, I am a photographer and these are some of my favorite photos. I hope you enjoy them!</p>
+</div>
+
+</body>
+</html>
+
+

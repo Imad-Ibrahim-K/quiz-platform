@@ -1,0 +1,41 @@
+{% load static %}
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/reg-pag.css' %}">
+  <title>Sign in</title>
+  <style>
+    body {
+        background-image: url('{% static "images/bg.gif" %}');
+    }
+
+</style>
+</head>
+
+<body>
+
+  <div class="main">
+    <p class="sign" align="center">Online Quizz Sign up</p>
+    <form class="form1">
+      <input class="pass" name="fullName" type="text" align="center" placeholder="Full-Name">
+      <input class="un" name="uesrName" type="text" align="center" placeholder="Username">
+      <input class="pass" name="pass" type="password" align="center" placeholder="Password">
+      <input class="un" name="passCon" type="password" align="center" placeholder="conform-Password">
+      <input class="un" name="emailId" type="email" align="center" placeholder="Email-Id">
+      <a class="submit" align="center" href="home"> Sign up</a><br><br>
+      <!-- <p class="forgot" align="center"><a href="#">Forgot Password?</p> -->
+      <p class="reg-pag" align="center"><a href="index">Sign-In.!</p>
+            
+                
+    </div>
+     
+</body>
+
+</html>
