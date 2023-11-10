@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,18 +23,19 @@
 
   <div class="main">
     <p class="sign" align="center">Online Quizz Sign up</p>
-    <form class="form1">
+    <form class="form1" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+
       <input class="pass" name="fullName" type="text" align="center" placeholder="Full-Name">
-      <input class="un" name="uesrName" type="text" align="center" placeholder="Username">
+      <input class="un" name="userName" type="text" align="center" placeholder="Username">
       <input class="pass" name="pass" type="password" align="center" placeholder="Password">
-      <input class="un" name="passCon" type="password" align="center" placeholder="conform-Password">
+      <input class="un" name="passCon" type="password" align="center" placeholder="Confirm Password">
       <input class="un" name="emailId" type="email" align="center" placeholder="Email-Id">
-      <a class="submit" align="center" href="home"> Sign up</a><br><br>
+      <button class="submit" type="submit">Sign up</button><br><br>
       <!-- <p class="forgot" align="center"><a href="#">Forgot Password?</p> -->
-      <p class="reg-pag" align="center"><a href="index">Sign-In.!</p>
-            
-                
-    </div>
+      <p class="reg-pag" align="center"><a href="/">Sign-In.!</p>
+    </form>        
+</div>
      
 </body>
 

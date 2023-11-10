@@ -27,7 +27,7 @@ body {
 
 .un {
 width: 76%;
-color: rgb(38, 50, 56);
+color: #fff;
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
@@ -52,22 +52,22 @@ form.form1 {
 
 .pass {
         width: 76%;
-color: rgb(255, 255, 255);
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 1px;
-background: rgba(140, 138, 138, 0);
-padding: 10px 20px;
-border: none;
-border-radius: 20px;
-outline: none;
-box-sizing: border-box;
-border: 2px solid #b383cd;
-margin-bottom: 50px;
-margin-left: 46px;
-text-align: center;
-margin-bottom: 27px;
-font-family: 'Ubuntu', sans-serif;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(140, 138, 138, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid #b383cd;
+        margin-bottom: 50px;
+        margin-left: 46px;
+        text-align: center;
+        margin-bottom: 27px;
+        font-family: 'Ubuntu', sans-serif;
 }
 
 
